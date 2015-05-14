@@ -52,8 +52,6 @@ namespace C_Sharp_Praticas
         public Double ClassFinal()
         {
             return Math.Round(((test1 + test2) / 2), 1, MidpointRounding.AwayFromZero);
-        }
-
-
+        }   
     }
 }
