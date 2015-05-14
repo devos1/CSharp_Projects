@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_Praticas
 {
-    class Student
+    public class Student
     {
         // PROPERTIES
         public String name { get; set; }
