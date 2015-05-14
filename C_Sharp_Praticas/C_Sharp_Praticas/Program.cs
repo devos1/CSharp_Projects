@@ -10,11 +10,23 @@ namespace C_Sharp_Praticas
     {
         static void Main(string[] args)
         {
-            Student student = new Student("John", 5.2, 4.1);
             Console.WriteLine("{0,-20} {1,-10}", "Student", "Final Note");
+
+            // STUDENT 1
+            Student student = new Student("John", 5.2, 4.1);
             Console.WriteLine("{0,-20} {1,7}", student.name, student.ClassFinal());
+
+            // STUDENT 2
+            Student student2 = new Student();
+            student2.name = "Nicky";
+            student2.test1 = 6;
+            student2.test2 = 5;
+            Console.WriteLine("{0,-20} {1,7}", student2.name, student2.ClassFinal());
+
+            // OTHER DISPLAY 
             Console.WriteLine("------------------------------------------------------");
             student.CompleteClassFinal();
+            student2.CompleteClassFinal();
             Console.ReadLine();
         }
     }

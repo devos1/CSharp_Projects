@@ -13,7 +13,22 @@ namespace C_Sharp_Praticas
         public Double test1 { get; set; }
         public Double test2 { get; set; }
 
-        // CONSTRUCTOR
+        /// <summary>
+        /// DEFAULT CONSTRUCTOR
+        /// </summary>
+        public Student() 
+        {
+            name = "";
+            test1 = 0;
+            test2 = 0;
+        }
+
+        /// <summary>
+        /// CONSTRUCTOR
+        /// </summary>
+        /// <param name="Name"></param>
+        /// <param name="Test1"></param>
+        /// <param name="Test2"></param>
         public Student(String Name, Double Test1, Double Test2)
         {
             name = Name;
