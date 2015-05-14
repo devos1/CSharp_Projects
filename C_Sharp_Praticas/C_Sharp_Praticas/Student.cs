@@ -40,7 +40,9 @@ namespace C_Sharp_Praticas
         /// Imprime les 2 notes avec la moyenne
         /// </summary>
         public void CompleteClassFinal(){
-            Console.WriteLine("Note 1 : {0} ; Note 2 : {1} => Moyenne : {2}",test1, test2, Math.Round(((test1+test2)/2),1,MidpointRounding.AwayFromZero));
+            //Console.WriteLine("Note 1 : {0} ; Note 2 : {1} => Moyenne : {2}",test1, test2, Math.Round(((test1+test2)/2),1,MidpointRounding.AwayFromZero));
+            Console.WriteLine("{0,-20} {1,-8} {2, -8} {3,-10}", "Student", "Test 1", "Test 2", "Final Note");
+            Console.WriteLine("{0,-20} {1,-8} {2, -8} {3,-10}", name, test1, test2, Math.Round(((test1 + test2) / 2), 1, MidpointRounding.AwayFromZero));
         }
 
         /// <summary>
