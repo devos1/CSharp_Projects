@@ -58,7 +58,10 @@ namespace Exercice_06
 
                 // Sort by Name and display into Console
                 sortArrayByName(students);
+                // Display Exercice 7
                 DisplayValues(students);
+                // Display Exercice 8
+                DisplayCompleteValues(students);
             }
             else
             {
@@ -82,7 +85,7 @@ namespace Exercice_06
         }
 
         /// <summary>
-        /// Print data to Console for Student's array
+        /// Print Name and Final Score to Console for Student's array
         /// </summary>
         /// <param name="arr"></param>
         private static void DisplayValues(Student[] arr)
@@ -92,6 +95,20 @@ namespace Exercice_06
             for (int i = arr.GetLowerBound(0); i <= arr.GetUpperBound(0); i++)
             {
                 Console.WriteLine("{0,-25} {1}", arr[i].name, arr[i].ClassFinal());
+            }
+        }
+
+        /// <summary>
+        /// Print all informations
+        /// </summary>
+        /// <param name="arr"></param>
+        private static void DisplayCompleteValues(Student[] arr)
+        {
+            Console.WriteLine("==================================================");
+            Console.WriteLine("{0,-12} {1,-12} {2,-12} {3,-12}", "Student", "Test 1", "Test 2", "Final Score");
+            for (int i = arr.GetLowerBound(0); i <= arr.GetUpperBound(0); i++)
+            {
+                Console.WriteLine("{0,-12} {1, -12} {2, -12} {3, -12}", arr[i].name, arr[i].test1, arr[i].test2, arr[i].ClassFinal());
             }
         }
     }
