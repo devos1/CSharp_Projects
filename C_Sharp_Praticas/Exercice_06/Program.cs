@@ -62,6 +62,16 @@ namespace Exercice_06
                 DisplayValues(students);
                 // Display Exercice 8
                 DisplayCompleteValues(students);
+                // Display Exercice 9
+                Console.WriteLine("==================================================");
+                Console.WriteLine("Students approved for next year :");
+                foreach (Student std in students)
+                {          
+                    if (std.Passed(std) == Student.StatStd.Ok)
+                    {
+                        Console.WriteLine(std.name);
+                    }
+                }
             }
             else
             {

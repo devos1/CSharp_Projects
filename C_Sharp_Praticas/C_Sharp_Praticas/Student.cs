@@ -8,6 +8,14 @@ namespace C_Sharp_Praticas
 {
     public class Student
     {
+        // ENUMS
+        public enum StatStd
+        {
+            Ok,
+            OkForOral,
+            NotOk
+        };
+
         // PROPERTIES
         public String name { get; set; }
         public Double test1 { get; set; }
@@ -52,6 +60,29 @@ namespace C_Sharp_Praticas
         public Double ClassFinal()
         {
             return Math.Round(((test1 + test2) / 2), 1, MidpointRounding.AwayFromZero);
-        }   
+        }
+
+        /// <summary>
+        /// Retourne la situation de l'elève (passe l'année ou pas ou si passe mais pour l'oral)
+        /// </summary>
+        /// <param name="std"></param>
+        /// <returns></returns>
+        public StatStd Passed(Student std)
+        {
+            double avgScore = (std.test1 + std.test2) / 2;
+
+            if (avgScore >= 10)
+            {
+                return StatStd.Ok;
+            }
+            else if (avgScore >= 8)
+            {
+                return StatStd.OkForOral;
+            }
+            else
+            {
+                return StatStd.NotOk;
+            }
+        }
     }
 }

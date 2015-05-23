@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercices_01_to_05", "C_Sharp_Praticas\Exercices_01_to_05.csproj", "{F59E9020-7805-445A-8645-EDF8A6DA6778}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice_06_to_08", "Exercice_06\Exercice_06_to_08.csproj", "{BDE00323-8368-4EC2-9AF8-86C9DCB93118}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice_06_to_09", "Exercice_06\Exercice_06_to_09.csproj", "{BDE00323-8368-4EC2-9AF8-86C9DCB93118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
