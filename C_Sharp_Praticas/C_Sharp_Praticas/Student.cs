@@ -85,6 +85,7 @@ namespace C_Sharp_Praticas
             }
         }
 
+        #region EXERCICE 10
         // EXERCICE 10 - Création de varaibles et méthodes statiques
         private static int nbStudents = 0;
         private static double sumNotes = 0;
@@ -117,7 +118,26 @@ namespace C_Sharp_Praticas
 
         public static void showClassAVG()
         {
-            Console.WriteLine("Class AVG : {0}", ClassAVG());
+            Console.WriteLine("Class AVG : {0}", Math.Round(ClassAVG(),2));
         }
+
+        #endregion
+
+        #region EXERCICE 11
+        private static int nbStudentsWithPositive;
+
+        public void assStdWithPositives(double n1, double n2)
+        {
+            if (n1 >= 10 || n2 >= 10)
+            {
+                nbStudentsWithPositive++;
+            }
+        }
+
+        public static void showNbStdWithPositive()
+        {
+            Console.WriteLine("{0} student(s) have at least a positive score", nbStudentsWithPositive);
+        }
+        #endregion
     }
 }

@@ -55,6 +55,9 @@ namespace Exercice_06
                     // Sum AVG for each Student
                     student.sumAvgNotes();
 
+                    // Sum students with positive score
+                    student.assStdWithPositives(student.test1, student.test2);
+
                     // Add student to array
                     students[i] = student;
                 }
@@ -84,6 +87,10 @@ namespace Exercice_06
             // Display Exercice 10
             Console.WriteLine("==================================================");
             Student.showClassAVG();
+
+            // Display Exercice 11
+            Console.WriteLine("==================================================");
+            Student.showNbStdWithPositive();
 
             Console.WriteLine("\nEnter a key to finish");
             Console.ReadLine();
