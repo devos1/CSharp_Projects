@@ -56,7 +56,7 @@ namespace Exercice_06
                     student.sumAvgNotes();
 
                     // Sum students with positive score
-                    student.assStdWithPositives(student.test1, student.test2);
+                    student.assStdWithPositives();
 
                     // Add student to array
                     students[i] = student;

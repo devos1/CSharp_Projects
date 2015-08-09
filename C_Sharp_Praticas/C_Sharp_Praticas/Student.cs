@@ -126,9 +126,9 @@ namespace C_Sharp_Praticas
         #region EXERCICE 11
         private static int nbStudentsWithPositive;
 
-        public void assStdWithPositives(double n1, double n2)
+        public void assStdWithPositives()
         {
-            if (n1 >= 10 || n2 >= 10)
+            if (test1 >= 10 || test2 >= 10)
             {
                 nbStudentsWithPositive++;
             }
