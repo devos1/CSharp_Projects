@@ -84,5 +84,40 @@ namespace C_Sharp_Praticas
                 return StatStd.NotOk;
             }
         }
+
+        // EXERCICE 10 - Création de varaibles et méthodes statiques
+        private static int nbStudents = 0;
+        private static double sumNotes = 0;
+
+        /// <summary>
+        /// Description : Ajoute la moyenne de chaque élève et incrémente le nb d'étudiants
+        /// </summary>
+        public void sumAvgNotes()
+        {
+            sumNotes += ClassFinal();
+            nbStudents++;
+
+        }
+        /// <summary>
+        /// Calcule la moyenne de la classe
+        /// Return : 0 si erreur et la moyenne si ok
+        /// </summary>
+        /// <returns></returns>
+        public static double ClassAVG()
+        {
+            if (nbStudents > 0)
+            {
+                return sumNotes / nbStudents;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static void showClassAVG()
+        {
+            Console.WriteLine("Class AVG : {0}", ClassAVG());
+        }
     }
 }

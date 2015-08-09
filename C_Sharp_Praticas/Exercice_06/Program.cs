@@ -52,6 +52,9 @@ namespace Exercice_06
                         student.test2 = score;
                     } while (!parseIntOK);
 
+                    // Sum AVG for each Student
+                    student.sumAvgNotes();
+
                     // Add student to array
                     students[i] = student;
                 }
@@ -77,6 +80,10 @@ namespace Exercice_06
             {
                 Console.WriteLine("Error with input... program aborted");
             }
+
+            // Display Exercice 10
+            Console.WriteLine("==================================================");
+            Student.showClassAVG();
 
             Console.WriteLine("\nEnter a key to finish");
             Console.ReadLine();
